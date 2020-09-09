@@ -35,11 +35,7 @@
     position: relative;
 }
 
-#header-icon-search {
-
-}
-
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 799px) {
     .header-small-area {
         height: 5vh;
     }
@@ -55,6 +51,26 @@
     .header-img {
         width: 19vw;
         top: 5vh;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .header-small-area {
+        height: 2vh;
+    }
+
+    .header-circle-area {
+        height: 8vh;
+        top: 25vh;
+        left: 34vw;
+        width: 38vw;
+    }
+
+    .header-img {
+        width: 20vw;
+        top: 4vh;
+        left: 4vw;
     }
 
 }
