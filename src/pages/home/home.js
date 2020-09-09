@@ -7,10 +7,14 @@ class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      abilities: ["static", "lightning-rod", "lindo teste"],
+      abilities: [
+        { "static": "exemplo de descricao 1" },
+        { "lightning-rod": "exemplo de descricao 2" },
+        { "lindo teste": "exemplo de descricao 3" },
+      ]
     }
-
   }
+
   render() {
     return (
       <div className="home">

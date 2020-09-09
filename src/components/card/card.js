@@ -1,7 +1,14 @@
 import React from 'react'
 import './card.scss';
 
-import { Card, CardActionArea, Tooltip, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { Card, Tooltip, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+
+const CustomTooltip = withStyles((theme) => ({
+	tooltip: {
+		fontSize: 25,
+	},
+}))(Tooltip);
 
 class CardProfile extends React.Component {
 	constructor(props) {
@@ -11,13 +18,14 @@ class CardProfile extends React.Component {
 	renderAbilites() {
 		let abilites = [];
 		let data = this.props.value;
-		console.log('data', data)
 
 		for (let i = 0; i < data.length; i++) {
+			let current = data[i];
+			let item = Object.keys(current)[0];
 			abilites.push(
-				<Tooltip key={i + data[i]} className="profile-abilities" title={"qualquercoisa"}>
-					<Button>{data[i]}</Button>
-				</Tooltip>
+				<CustomTooltip key={i + item} className="profile-abilities" title={current[item]}>
+					<Button>{item}</Button>
+				</CustomTooltip>
 			);
 		}
 		return abilites;

@@ -3,7 +3,7 @@
 }
 
 .card-profile-img {
-    width: 30vw;
+    width: 20vh;
     height: 10vh;
     margin: auto;
 }
@@ -23,9 +23,28 @@
     padding: 0;
 }
 
-@media (orientation: landscape) and (max-width: 799px) {
+.MuiButton-label {
+    text-transform: capitalize;
+}
+
+@media (orientation: landscape) and (max-width: 550px) {
     .card-profile-img {
-        width: 19vw;
+        width: 20vh;
         height: 17vh;
+    }
+}
+
+@media (min-width: 800px) {
+    .card-profile-img {
+        width: 20vh;
+        height: 14vh;
+    }
+
+    .MuiButton-label {
+        font-size: 1.5em;
+    }
+
+    #profile-form {
+        font-size: 2em;
     }
 }
