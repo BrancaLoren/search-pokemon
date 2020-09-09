@@ -20,11 +20,16 @@
 }
 
 #profile-buttons {
-    padding: 0;
+    padding: 2vh 0;
 }
 
 #profile-buttons div{
     padding: 1%;
+}
+
+#profile-buttons div button{
+    box-shadow: unset;
+    padding: 0 2px;
 }
 
 .MuiButton-label {

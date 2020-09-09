@@ -1,8 +1,9 @@
 import React, { Suspense, lazy } from 'react'
 import { Switch, Router, Route } from 'react-router'
 import { createBrowserHistory } from 'history'
+import LinearProgress from '@material-ui/core/LinearProgress';
 
-const Home = lazy(() => import('../pages/home/Home'));
+const Home = lazy(() => import('../pages/home/home'));
 
 const Routes = () => (
 
@@ -12,7 +13,7 @@ const Routes = () => (
             forceRefresh: false
         })}>
         <Switch>
-            <Suspense fallback={<h1>Rendering...</h1>}>
+            <Suspense fallback={<LinearProgress />}>
                 <Route component={() => <Home />} exact path="/" />
             </Suspense>
         </Switch>
