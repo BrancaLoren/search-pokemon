@@ -7,13 +7,13 @@ import SearchIcon from "@material-ui/icons/Search";
 class Search extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      text: ''
+    }
   }
 
   serchItem(event) {
-  }
-
-  clickSearch(event) {
-    event.preventDefault();
+    this.props.callback(event);
   }
 
   render() {
@@ -25,7 +25,7 @@ class Search extends React.Component {
           inputProps={{ "aria-label": "search" }}
           onChange={(event) => this.serchItem(event)}
         />
-        <IconButton type="submit" aria-label="search" id="button-container" onClick={(event) => this.clickSearch(event)}>
+        <IconButton type="submit" aria-label="search" id="button-container" onClick={(event) => this.props.callback(event)}>
           <SearchIcon />
         </IconButton>
       </Paper>

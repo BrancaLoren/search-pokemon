@@ -41,7 +41,7 @@ class PopoverProfile extends React.Component {
 						vertical: 'top',
 						horizontal: 'center',
 					}}>
-					<Typography className='content-popover'>{this.props.content}</Typography>
+					<Typography className='content-popover'>{this.props.content || "Some thing its wrong"}</Typography>
 				</Popover>
 			</div>
 		);

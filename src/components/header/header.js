@@ -2,7 +2,6 @@ import React from 'react'
 import './header.scss';
 
 import Search from '../search/search'
-import SearchIcon from "@material-ui/icons/Search";
 
 class Header extends React.Component {
 
@@ -14,7 +13,7 @@ class Header extends React.Component {
         </div>
         <div className="header-small-area"></div>
         <div className="header-circle-area">
-          <Search id="header-icon-search" placeholder="Search" />
+          <Search id="header-icon-search" placeholder="Search" callback={this.props.search} />
         </div>
       </div>
     );

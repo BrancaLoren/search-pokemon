@@ -24,16 +24,16 @@ class CardProfile extends React.Component {
 		let abilites = [];
 		let data = this.props.value;
 
-		for (let i = 0; i < data.length; i++) {
-			let current = data[i];
-			let item = Object.keys(current)[0];
+		let current = data[0];
+		for (let j = 0; j < current.length; j++) {
+			let teste = current[j];
+			let item = Object.keys(teste);
 
 			abilites.push(
-				<PopoverProfile item={item} content={current[item]}></PopoverProfile>
+				<PopoverProfile item={item} content={teste[item]}></PopoverProfile>
 			);
 		}
 		return abilites;
-
 	}
 
 	render() {
