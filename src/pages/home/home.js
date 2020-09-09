@@ -1,14 +1,17 @@
 import React from 'react'
 import './home.scss';
+import Header from '../../components/header/header';
 
-function Home() {
-  return (
-    <div className="home">
-      <h2 className="home-header">
-        Search Pokemon
-      </h2>
-    </div>
-  );
+class Home extends React.Component {
+
+  render() {
+    return (
+      <div className="home">
+        <Header></Header>
+      </div>
+    );
+  }
+
 }
 
 export default Home;

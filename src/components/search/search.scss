@@ -1,0 +1,16 @@
+#search-container {
+    box-shadow: unset;
+    margin-top: 2vh;
+    padding: 0 2vh;
+}
+.search-input {
+    width: 80%;
+}
+#button-container {
+    padding: 0;
+}
+@media (orientation: landscape) {
+    #search-container {
+        margin-top: 4vh;
+    }
+}

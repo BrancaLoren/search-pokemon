@@ -1,0 +1,60 @@
+
+ @import '../../assets/variables.scss';
+
+.header-container {
+
+}
+
+.header-big-area {
+    background-color: $base;
+    width: 100vw;
+    height: 30vh;
+}
+
+.header-small-area {
+    background-color: $black;
+    width: 100vw;
+    height: 3vh;
+}
+
+.header-circle-area {
+    border: 2vh solid $black;
+    border-radius: 15px;
+    width: 53vw;
+    height: 9vh;
+    position: absolute;
+    display: inline-block;
+    top: 24vh;
+    left: 22vw;
+    background-color: $white;
+}
+
+.header-img {
+    width: 38vw;
+    top: 9vh;
+    position: relative;
+}
+
+#header-icon-search {
+
+}
+
+@media (orientation: landscape) {
+    .header-small-area {
+        height: 5vh;
+    }
+
+    .header-circle-area {
+        border: 3vh solid $black;
+        width: 36vw;
+        height: 17vh;
+        top: 20vh;
+        left: 31vw;
+    }
+
+    .header-img {
+        width: 19vw;
+        top: 5vh;
+    }
+
+}
