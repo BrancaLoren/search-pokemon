@@ -1,0 +1,31 @@
+.card-profile-container {
+    margin: 2vh;
+}
+
+.card-profile-img {
+    width: 30vw;
+    height: 10vh;
+    margin: auto;
+}
+
+#profile-form {
+    text-transform: capitalize;
+}
+
+.profile-abilities {
+    list-style-type: disc;
+    display: list-item;
+    align-items: flex-end;
+    text-align: left;
+}
+
+#profile-buttons {
+    padding: 0;
+}
+
+@media (orientation: landscape) and (max-width: 799px) {
+    .card-profile-img {
+        width: 19vw;
+        height: 17vh;
+    }
+}

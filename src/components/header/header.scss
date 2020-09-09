@@ -1,10 +1,6 @@
 
  @import '../../assets/variables.scss';
 
-.header-container {
-
-}
-
 .header-big-area {
     background-color: $base;
     width: 100vw;
@@ -35,7 +31,17 @@
     position: relative;
 }
 
+.header-container {
+    text-align: center;
+    overflow-y: hidden;
+    height: 39vh;
+  }
+
 @media (orientation: landscape) and (max-width: 799px) {
+    .header-container {
+        height: 44vh;
+    }
+
     .header-small-area {
         height: 5vh;
     }
