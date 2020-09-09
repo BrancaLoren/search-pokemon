@@ -23,8 +23,16 @@
     padding: 0;
 }
 
+#profile-buttons div{
+    padding: 1%;
+}
+
 .MuiButton-label {
     text-transform: capitalize;
+}
+
+.MuiCard-root {
+    min-height: 35vh;
 }
 
 @media (orientation: landscape) and (max-width: 550px) {

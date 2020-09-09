@@ -9,14 +9,19 @@
 #button-container {
     padding: 0;
 }
+
 @media (orientation: landscape) and (max-width: 799px) {
     #search-container {
-        margin-top: 4vh;
+        margin-top: 0vh;
     }
 }
 
 @media (min-width: 800px) {
     #search-container {
         margin-top: 2vh;
+    }
+
+    #search-container .MuiInputBase-root {
+        font-size: 1.5em;
     }
 }
